@@ -107,7 +107,7 @@ $(document).ready(function() {
 	<input type="password" name="password" data-validate-length-range="4,8" required='required' id="password">
 	</label>
 	
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="result"></div>
+            <div id="result"></div>
 	</div>
                                         <br>
                                         <br>

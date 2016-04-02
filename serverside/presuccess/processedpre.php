@@ -1,6 +1,12 @@
 <?php
 session_start();
-include_once('inc/dbConnect.inc.php');
+//include_once('inc/dbConnect.inc.php');
+$mysql_db_hostname = "localhost";
+$mysql_db_user = "root";
+$mysql_db_password = "";
+$mysql_db_database = "demo";
+
+$con = mysqli_connect("localhost","root","","demo") or die("Error " . mysqli_error($con)); 
 $message=array();
 if(isset($_POST['uname']) && !empty($_POST['uname'])){
     $uname=mysqli_real_escape_string($con,$_POST['uname']);

@@ -8,7 +8,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login for premium</title>
+<title>Login User</title>
 <link rel="stylesheet" type="text/css" href="css/stylelogin.css" />
 <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 <script type="text/javascript">
@@ -20,7 +20,7 @@ function validLogin(){
       
       $.ajax({
       type: "POST",
-      url: "processedpre.php",
+      url: "presuccess/processedpre.php",
       data: dataString,
       cache: false,
       success: function(result){
